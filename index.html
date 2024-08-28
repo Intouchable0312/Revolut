@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolut</title>
-    <link rel="icon" type="image/x-icon" href ="https://cdn.icon-icons.com/icons2/3914/PNG/512/revolut_logo_icon_248648.png">
+    <link rel="icon" type="image/x-icon" href ="https://play-lh.googleusercontent.com/9Agn2TZHIyOR4GGB4LcOU4VXwE2OcK47qwGY8XPZXz4u55ehNfpGuEBeNq_cbvH0z5A">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -18,7 +18,7 @@
             min-height: 100vh;
             /* Commenter ou supprimer la ligne suivante pour masquer l'image de fond */
         }
-
+ 
         .app-container {
             max-width: 90vw;
             width: 400px;
@@ -28,11 +28,11 @@
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
-
+ 
         .app-container:hover {
             transform: scale(1.02);
         }
-
+ 
         .header {
     background-color: #ffffff;
     color: black;
@@ -41,19 +41,19 @@
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
-
+ 
         .header-logo {
             max-width: 100%; /* Ajuste la largeur de l'image pour qu'elle ne dépasse pas l'en-tête */
             height: auto; /* Maintient les proportions de l'image */
             border-radius: 15px 15px 0 0; /* Coins arrondis du même style que l'en-tête */
         }
-
+ 
         .header h1 {
             margin: 0;
             font-size: 26px;
             font-weight: 600;
         }
-
+ 
         .balance-container {
             background: #333;
             color: #ffffff;
@@ -63,24 +63,24 @@
             text-align: center;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
-        
+ 
         .image-container {
             text-align: center;
             margin-bottom: 20px; /* Espacement sous l'image */
         }
-
+ 
         .balance-container p {
             margin: 10px 0;
             font-size: 18px;
             font-weight: 400;
         }
-
+ 
         .balance-container h2 {
             font-size: 42px;
             margin: 0;
             font-weight: 600;
         }
-
+ 
         .credit-card {
             background: #333;
             border: 1px solid #555;
@@ -91,24 +91,24 @@
             text-align: center;
             max-width: 320px; /* Assure que la carte ne dépasse pas une certaine largeur */
         }
-
+ 
         .credit-card img {
             width: 100%;
             border-radius: 12px;
             max-width: 320px;
         }
-
+ 
         .credit-card .card-number {
             font-size: 20px;
             letter-spacing: 1.5px;
             font-weight: bold;
         }
-
+ 
         .credit-card .card-info {
             font-size: 12px;
             color: #aaa;
         }
-
+ 
         .history-container-wrapper {
     background: #333;
     border: 1px solid #555;
@@ -118,7 +118,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 320px;
 }
-
+ 
 .history-container-wrapper {
     background: #333;
     border: 1px solid #555;
@@ -128,7 +128,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 320px;
 }
-
+ 
 .history-container-wrapper h3 {
     margin: 0;
     padding-bottom: 10px;
@@ -136,13 +136,13 @@
     text-align: center;
     font-size: 18px;
 }
-
+ 
 .history-container {
     max-height: 250px;
     overflow-y: auto;
     padding-right: 10px;
 }
-
+ 
 .history-item {
     background-color: #2c2c2c;
     border-radius: 15px;
@@ -155,37 +155,37 @@
     align-items: center;
     transition: transform 0.2s ease;
 }
-
+ 
 .history-item.sent {
     background-color: #3e3e3e;
     border-left: 8px solid #e57373;
 }
-
+ 
 .history-item.received {
     background-color: #3e3e3e;
     border-left: 8px solid #81c784;
 }
-
+ 
 .history-item p {
     margin: 0;
     font-size: 16px;
     font-weight: bold;
 }
-
+ 
 .history-item span {
     font-size: 16px;
     font-weight: bold;
 }
-
+ 
         .transaction-container {
             display: none;
             margin-top: 20px;
         }
-
+ 
         .transaction-container.active {
             display: block;
         }
-
+ 
         .transaction-container input, .transaction-container textarea, .transaction-container button {
             width: calc(100% - 40px);
             padding: 12px;
@@ -196,11 +196,11 @@
             color: #e0e0e0;
             font-size: 16px;
         }
-
+ 
         .transaction-container textarea {
             height: 80px;
         }
-
+ 
         .transaction-container button {
             background-color: #4a90e2;
             color: white;
@@ -209,11 +209,11 @@
             font-weight: 600;
             transition: background-color 0.3s ease;
         }
-
+ 
         .transaction-container button:hover {
             background-color: #357abd;
         }
-
+ 
         .navbar {
             background-color: #ffffff;
             display: flex; /* Utiliser flexbox pour le conteneur */
@@ -226,7 +226,7 @@
             box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
-
+ 
         .navbar div {
             font-size: 14px;
             color: #333333;
@@ -235,19 +235,19 @@
             transition: color 0.3s ease, background-color 0.3s ease;
             padding: 10px;
         }
-
+ 
         .navbar div.active {
             color: #007aff; /* Couleur d'accentuation */
             font-weight: 600;
             background-color: #f0f0f5; /* Fond léger pour l'élément actif */
             border-radius: 8px; /* Coins légèrement arrondis */
         }
-
+ 
         .navbar div:hover {
             background-color: #f5f5f5; /* Fond au survol */
             border-radius: 8px; /* Coins légèrement arrondis */
         }
-        
+ 
         .modal {
     display: none; /* Masquer par défaut */
     position: fixed;
@@ -259,7 +259,7 @@
     overflow: auto; /* Permet le scroll si le contenu est trop grand */
     background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
 }
-
+ 
 .modal-content {
     background-color: #1e1e1e;
     position: fixed;
@@ -274,7 +274,7 @@
     color: #e0e0e0;
     text-align: center;
 }
-
+ 
 .close-button {
     color: #aaa;
     float: right;
@@ -282,13 +282,13 @@
     font-weight: bold;
     cursor: pointer;
 }
-
+ 
 .close-button:hover,
 .close-button:focus {
     color: #fff;
     text-decoration: none;
 }
-        
+ 
         .clickable-text-container {
             position: fixed;
             bottom: 0;
@@ -302,7 +302,7 @@
             border-top: 1px solid #e0e0e0; /* Optionnel : une bordure pour séparer du reste du contenu */
             box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1); /* Optionnel : une ombre pour un effet de profondeur */
         }
-
+ 
         .clickable-text {
             color: #4a90e2;
             font-weight: 600;
@@ -310,20 +310,20 @@
             font-size: 14px; /* Réduit la taille de la police pour s'adapter sur une ligne */
             transition: color 0.3s ease, text-decoration 0.3s ease;
         }
-
+ 
         .clickable-text:hover {
             text-decoration: underline;
         }
-
+ 
         .clickable-text.active {
             color: #007aff; /* Couleur d'accentuation pour l'élément actif */
             font-weight: 600;
         }
-
+ 
         .page {
             display: none;
         }
-
+ 
         .page.active {
             display: block;
         }
@@ -359,25 +359,25 @@
     </div>
 </div>
     </div>
-    
+ 
     <div class="page" id="transaction-page">
         <div class="header">
             <h1>Transactions</h1>
         </div>
-        
+ 
         <div class="transaction-container active" id="reset-container">
             <h3>Réinitialiser le solde</h3>
             <input type="number" id="reset-amount" placeholder="Montant initial">
             <button onclick="resetWallet()">Réinitialiser</button>
         </div>
-
+ 
         <div class="transaction-container active" id="send-money-container">
             <h3>Envoyer de l'argent</h3>
             <input type="number" id="send-amount" placeholder="Montant à envoyer">
             <textarea id="send-reason" placeholder="Raison de l'envoi"></textarea>
             <button onclick="sendMoney()">Envoyer</button>
         </div>
-
+ 
         <div class="transaction-container active" id="receive-money-container">
             <h3>Recevoir de l'argent</h3>
             <input type="number" id="receive-amount" placeholder="Montant à recevoir">
@@ -386,7 +386,7 @@
         </div>
     </div>
 </div>
-
+ 
     <!-- Conteneur du texte cliquable en bas -->
     <div class="clickable-text-container">
         <div class="clickable-text active" onclick="showPage('home-page')">Portefeuille</div>
@@ -394,71 +394,71 @@
     <div class="clickable-text" onclick="window.location.href='https://www.revolut.com/fr-FR/contact-us/'">Assistance</div>
     <div class="clickable-text" onclick="window.location.href='https://www.exemple.com'">Compte</div>
     </div>
-
+ 
     <script>
         let balance = parseFloat(localStorage.getItem('balance')) || 3025.18;
         let transactionCount = parseInt(localStorage.getItem('transactionCount')) || 0;
         let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
-
+ 
         function updateBalance() {
             document.getElementById('balance').textContent = balance.toFixed(2) + " €";
             localStorage.setItem('balance', balance);
         }
-
+ 
         function updateDate() {
             const today = new Date();
             const day = today.getDate().toString().padStart(2, '0');
             const month = (today.getMonth() + 1).toString().padStart(2, '0');
             const year = today.getFullYear();
-            document.getElementById('last-update').textContent = ${day}/${month}/${year};
+            document.getElementById('last-update').textContent = `${day}/${month}/${year}`;
         }
-
+ 
         function addTransaction(amount, reason, type) {
     const historyContainer = document.querySelector('.history-container');
-    
+ 
     const existingTransaction = Array.from(historyContainer.children).find(item => {
         return item.innerHTML.includes(reason) && item.innerHTML.includes(amount);
     });
-    
+ 
     if (!existingTransaction) {
         transactionCount++;
         const now = new Date();
         const dateTime = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
-
+ 
         const newTransaction = document.createElement('div');
         newTransaction.className = 'history-item ' + type;
         newTransaction.id = "transaction-" + transactionCount;
         newTransaction.setAttribute('data-datetime', dateTime);  // Ajout de la date/heure dans un attribut data
-        newTransaction.innerHTML = <p>${reason}</p><span>${amount}</span>;
+        newTransaction.innerHTML = `<p>${reason}</p><span>${amount}</span>`;
         newTransaction.addEventListener('click', showTransactionDetails); // Ajout de l'événement click
-        
+ 
         historyContainer.prepend(newTransaction);
-        
+ 
         transactions.push({ amount, reason, type, dateTime });
         localStorage.setItem('transactions', JSON.stringify(transactions));
         localStorage.setItem('transactionCount', transactionCount);
     }
 }
-
+ 
 function showTransactionDetails(event) {
     const transactionElement = event.currentTarget;
     const dateTime = transactionElement.getAttribute('data-datetime');
     const reason = transactionElement.querySelector('p').textContent;
     const amount = transactionElement.querySelector('span').textContent;
-
-    document.getElementById('modal-amount').textContent = Montant: ${amount};
-    document.getElementById('modal-reason').textContent = Raison: ${reason};
-    document.getElementById('modal-datetime').textContent = Date et heure: ${dateTime};
-    
+ 
+    document.getElementById('modal-amount').textContent = `Montant: ${amount}`;
+    document.getElementById('modal-reason').textContent = `Raison: ${reason}`;
+    document.getElementById('modal-datetime').textContent = `Date et heure: ${dateTime}`;
+ 
     const modal = document.getElementById('modal');
     modal.style.display = 'block';
 }
-
+ 
 // Fermer la boîte modale
 document.querySelector('.close-button').addEventListener('click', () => {
     document.getElementById('modal').style.display = 'none';
 });
-
+ 
 // Fermer la boîte modale si on clique en dehors du contenu
 window.addEventListener('click', (event) => {
     const modal = document.getElementById('modal');
@@ -480,7 +480,7 @@ window.addEventListener('click', (event) => {
                 alert("Montant invalide, insuffisant ou raison manquante.");
             }
         }
-
+ 
         function receiveMoney() {
             const receiveAmount = parseFloat(document.getElementById('receive-amount').value);
             const receiveReason = document.getElementById('receive-reason').value.trim();
@@ -495,7 +495,7 @@ window.addEventListener('click', (event) => {
                 alert("Montant invalide ou raison manquante.");
             }
         }
-
+ 
         function loadTransactions() {
     const historyContainer = document.querySelector('.history-container');
     historyContainer.innerHTML = ''; // Réinitialiser l'historique
@@ -506,7 +506,7 @@ window.addEventListener('click', (event) => {
         lastTransaction.addEventListener('click', showTransactionDetails);
     });
 }
-        
+ 
         function resetWallet() {
             const resetAmount = parseFloat(document.getElementById('reset-amount').value);
             if (!isNaN(resetAmount) && resetAmount >= 0) {
@@ -522,16 +522,16 @@ window.addEventListener('click', (event) => {
                 alert("Montant invalide.");
             }
         }
-
+ 
         function showPage(pageId) {
             const pages = document.querySelectorAll('.page');
             const clickableTexts = document.querySelectorAll('.clickable-text');
             pages.forEach(page => page.classList.remove('active'));
             clickableTexts.forEach(text => text.classList.remove('active'));
             document.getElementById(pageId).classList.add('active');
-            document.querySelector(.clickable-text[onclick="showPage('${pageId}')"]).classList.add('active');
+            document.querySelector(`.clickable-text[onclick="showPage('${pageId}')"]`).classList.add('active');
         }
-
+ 
         // Initialisation
         updateBalance();
         updateDate();
